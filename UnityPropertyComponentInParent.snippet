@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Shortcut>upropcp</Shortcut>
+      <Title>UnityPropertyComponentInChildren</Title>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <Default>Component</Default>
+          <ID>Component</ID>
+        </Literal>
+        <Literal Editable="true">
+          <Default>target</Default>
+          <ID>target</ID>
+        </Literal>
+      </Declarations>
+      <Code Language="CSharp"><![CDATA[$Component$ _$target$;
+	public $Component$ $target$
+	{
+		get { return _$target$ ? _$target$ : (_$target$ = GetComponentInParent<$Component$>()); }
+	}
+
+$end$]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

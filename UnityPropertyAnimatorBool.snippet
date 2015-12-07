@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Shortcut>apropb</Shortcut>
+      <Title>UnityPropertyAnimatorBool</Title>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <Default>param</Default>
+          <ID>param</ID>
+        </Literal>
+      </Declarations>
+      <Code Language="CSharp"><![CDATA[const string _$param$Name = "$param$";
+	int? _$param$Id;
+	public bool $param$
+	{
+		get { return animator.GetBool(_$param$Id ?? (_$param$Id = Animator.StringToHash(_$param$Name)).Value); }
+		set { animator.SetBool(_$param$Id ?? (_$param$Id = Animator.StringToHash(_$param$Name)).Value, value); }
+	}
+
+$end$]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
