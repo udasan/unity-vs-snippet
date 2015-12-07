@@ -1,5 +1,6 @@
 # unity-vs-snippet
 Code Snippet for Unity and Visual Studio
+http://udasankoubou.blogspot.jp/2015/12/unity10visualstudio.html
 
 # install
 + Open Visual Studio
