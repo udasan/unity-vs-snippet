@@ -11,5 +11,5 @@ http://udasankoubou.blogspot.jp/2015/12/unity10visualstudio.html
 + Copy .snippet files to the folder
 
 # how to use
-+ On your C# code, type "upropc" and TAB key twice
++ On your C# code, type "upropc" (and more) and TAB key twice
 + Replace literals
