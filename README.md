@@ -2,6 +2,7 @@
 Code Snippet for Unity and Visual Studio
 
 # install
++ Open Visual Studio
 + Tool > Code Snippet Manager
 + Language : CSharp
 + Place : My Code Snippets
