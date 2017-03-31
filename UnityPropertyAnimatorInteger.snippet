@@ -11,10 +11,14 @@
           <Default>param</Default>
           <ID>param</ID>
         </Literal>
+		<Literal Editable="true">
+          <Default>public</Default>
+          <ID>public</ID>
+        </Literal>
       </Declarations>
       <Code Language="CSharp"><![CDATA[const string _$param$Name = "$param$";
 	int? _$param$Id;
-	public int $param$
+	$public$ int $param$
 	{
 		get { return animator.GetInteger(_$param$Id ?? (_$param$Id = Animator.StringToHash(_$param$Name)).Value); }
 		set { animator.SetInteger(_$param$Id ?? (_$param$Id = Animator.StringToHash(_$param$Name)).Value, value); }

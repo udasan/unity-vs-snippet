@@ -15,9 +15,13 @@
           <Default>target</Default>
           <ID>target</ID>
         </Literal>
+		<Literal Editable="true">
+          <Default>public</Default>
+          <ID>public</ID>
+        </Literal>
       </Declarations>
       <Code Language="CSharp"><![CDATA[$Component$ _$target$;
-	public $Component$ $target$
+	$public$ $Component$ $target$
 	{
 		get { return _$target$ ? _$target$ : (_$target$ = GetComponent<$Component$>()); }
 	}
