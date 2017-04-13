@@ -12,8 +12,12 @@
           <ID>Component</ID>
         </Literal>
         <Literal Editable="true">
-          <Default>target</Default>
-          <ID>target</ID>
+          <Default>variable</Default>
+          <ID>variable</ID>
+        </Literal>
+		<Literal Editable="true">
+          <Default>property</Default>
+          <ID>property</ID>
         </Literal>
 		<Literal Editable="true">
           <Default>public</Default>
@@ -24,10 +28,10 @@
           <ID>x</ID>
         </Literal>
       </Declarations>
-      <Code Language="CSharp"><![CDATA[$Component$ _$target$;
-	$public$ $Component$ $target$
+      <Code Language="CSharp"><![CDATA[$Component$ $variable$;
+	$public$ $Component$ $property$
 	{
-		get { return _$target$ ? _$target$ : (_$target$ = $x$); }
+		get { return $variable$ ? $variable$ : ($variable$ = $x$); }
 	}
 
 $end$]]></Code>

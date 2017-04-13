@@ -12,18 +12,22 @@
           <ID>target</ID>
         </Literal>
 		<Literal Editable="true">
-          <Default>public</Default>
-          <ID>public</ID>
+          <Default>variable</Default>
+          <ID>variable</ID>
+        </Literal>
+		<Literal Editable="true">
+          <Default>property</Default>
+          <ID>property</ID>
         </Literal>
         <Literal Editable="true">
           <Default>tag</Default>
           <ID>tag</ID>
         </Literal>
       </Declarations>
-      <Code Language="CSharp"><![CDATA[GameObject _$target$;
-	$public$ GameObject $target$
+      <Code Language="CSharp"><![CDATA[GameObject $variable$;
+	$public$ GameObject $property$
 	{
-		get { return _$target$ ? _$target$ : (_$target$ = GameObject.FindWithTag("$tag$")); }
+		get { return $variable$ ? $variable$ : ($variable$ = GameObject.FindWithTag("$tag$")); }
 	}
 
 $end$]]></Code>
