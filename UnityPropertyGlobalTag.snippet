@@ -8,26 +8,30 @@
     <Snippet>
       <Declarations>
         <Literal Editable="true">
-          <Default>target</Default>
-          <ID>target</ID>
-        </Literal>
-		<Literal Editable="true">
-          <Default>variable</Default>
-          <ID>variable</ID>
-        </Literal>
-		<Literal Editable="true">
-          <Default>property</Default>
+          <Default>roperty</Default>
           <ID>property</ID>
+        </Literal>
+		<Literal Editable="true">
+          <Default>p</Default>
+          <ID>lower</ID>
+        </Literal>
+		<Literal Editable="true">
+          <Default>P</Default>
+          <ID>upper</ID>
+        </Literal>
+		<Literal Editable="true">
+          <Default>public</Default>
+          <ID>access</ID>
         </Literal>
         <Literal Editable="true">
           <Default>tag</Default>
           <ID>tag</ID>
         </Literal>
       </Declarations>
-      <Code Language="CSharp"><![CDATA[GameObject $variable$;
-	$public$ GameObject $property$
+      <Code Language="CSharp"><![CDATA[GameObject $lower$$property$Cache;
+	$public$ GameObject $upper$$property$
 	{
-		get { return $variable$ ? $variable$ : ($variable$ = GameObject.FindWithTag("$tag$")); }
+		get { return $lower$$property$Cache ? $lower$$property$Cache : ($lower$$property$Cache = GameObject.FindWithTag("$tag$")); }
 	}
 
 $end$]]></Code>

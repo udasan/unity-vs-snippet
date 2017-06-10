@@ -9,25 +9,29 @@
       <Declarations>
         <Literal Editable="true">
           <Default>Component</Default>
-          <ID>Component</ID>
+          <ID>component</ID>
         </Literal>
         <Literal Editable="true">
-          <Default>variable</Default>
-          <ID>variable</ID>
-        </Literal>
-		<Literal Editable="true">
-          <Default>property</Default>
+          <Default>roperty</Default>
           <ID>property</ID>
         </Literal>
 		<Literal Editable="true">
+          <Default>p</Default>
+          <ID>lower</ID>
+        </Literal>
+		<Literal Editable="true">
+          <Default>P</Default>
+          <ID>upper</ID>
+        </Literal>
+		<Literal Editable="true">
           <Default>public</Default>
-          <ID>public</ID>
+          <ID>access</ID>
         </Literal>
       </Declarations>
-      <Code Language="CSharp"><![CDATA[$Component$ $variable$;
-	$public$ $Component$ $property$
+      <Code Language="CSharp"><![CDATA[$component$ $lower$$property$Cache;
+	$access$ $component$ $upper$$property$
 	{
-		get { return $variable$ ? $variable$ : ($variable$ = GetComponent<$Component$>()); }
+		get { return $lower$$property$Cache ? $lower$$property$Cache : ($lower$$property$Cache = GetComponent<$component$>()); }
 	}
 
 $end$]]></Code>
