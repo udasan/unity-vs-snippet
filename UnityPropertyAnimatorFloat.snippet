@@ -8,20 +8,32 @@
     <Snippet>
       <Declarations>
         <Literal Editable="true">
-          <Default>parameter</Default>
+          <Default>aram</Default>
           <ID>param</ID>
         </Literal>
 		<Literal Editable="true">
+          <Default>p</Default>
+          <ID>lower</ID>
+        </Literal>
+		<Literal Editable="true">
+          <Default>P</Default>
+          <ID>upper</ID>
+        </Literal>
+		<Literal Editable="true">
           <Default>public</Default>
-          <ID>public</ID>
+          <ID>access</ID>
+        </Literal>
+		<Literal Editable="true">
+          <Default>Anim</Default>
+          <ID>animator</ID>
         </Literal>
       </Declarations>
-      <Code Language="CSharp"><![CDATA[const string _$param$Name = "$param$";
-	int? _$param$Id;
-	$public$ float $param$
+      <Code Language="CSharp"><![CDATA[const string $lower$$param$Name = "$upper$$param$";
+	int? $lower$$param$Id;
+	$access$ float $upper$$param$
 	{
-		get { return animator.GetFloat(_$param$Id ?? (_$param$Id = Animator.StringToHash(_$param$Name)).Value); }
-		set { animator.SetFloat(_$param$Id ?? (_$param$Id = Animator.StringToHash(_$param$Name)).Value, value); }
+		get { return $animator$.GetFloat($lower$$param$Id ?? ($lower$$param$Id = Animator.StringToHash($lower$$param$Name)).Value); }
+		set { $animator$.SetFloat($lower$$param$Id ?? ($lower$$param$Id = Animator.StringToHash($lower$$param$Name)).Value, value); }
 	}
 
 $end$]]></Code>
