@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Shortcut>upropgc6</Shortcut>
+      <Title>UnityPropertyGlobalComponent6</Title>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <Default>Component</Default>
+          <ID>component</ID>
+        </Literal>
+        <Literal Editable="true">
+          <Default>roperty</Default>
+          <ID>property</ID>
+        </Literal>
+		<Literal Editable="true">
+          <Default>p</Default>
+          <ID>lower</ID>
+        </Literal>
+		<Literal Editable="true">
+          <Default>P</Default>
+          <ID>upper</ID>
+        </Literal>
+		<Literal Editable="true">
+          <Default>public</Default>
+          <ID>access</ID>
+        </Literal>
+      </Declarations>
+      <Code Language="CSharp"><![CDATA[$component$ $lower$$property$Cache;
+	$access$ $component$ $upper$$property$ => $lower$$property$Cache ? $lower$$property$Cache : ($lower$$property$Cache = FindObjectOfType<$component$>());
+
+$end$]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
